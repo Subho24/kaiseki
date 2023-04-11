@@ -25,7 +25,8 @@ export const Button = (props) => {
             alignItems: 'center',
             gap: '10px',
             margin: 'auto',
-            cursor: 'pointer'
+            cursor: 'pointer',
+            opacity: 'unset'
         }
     }
     return (
@@ -37,7 +38,7 @@ export const Button = (props) => {
             <span>
                 {props.buttonText}
             </span>
-            <span>
+            <span style={{marginBottom: -5}}>
                 {props.iconElement}
             </span>
         </div>

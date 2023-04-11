@@ -1,9 +1,8 @@
 import banner from '../banner.webp';
 import logo_background from '../logo_background.webp';
-import logo from '../logo.webp';
+import logo from '../logo.jpg';
 import { Button } from './button';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCalendarCheck } from '@fortawesome/free-regular-svg-icons';
+import { SetMeal } from '@mui/icons-material';
 
 
 
@@ -70,10 +69,8 @@ export const Banner = (props) => {
             position: 'relative',
             top: 0,
             left: 0,
-            height: 780,
-            width: 980,
-            maxHeight: 780,
-            maxWidth: 980,
+            height: 800,
+            width: '90%',
             margin: 'auto'
         },
 
@@ -93,14 +90,14 @@ export const Banner = (props) => {
             position: 'absolute',
             top: 0,
             left: 0,
-            width: '100%',
+            width: '95%',
             height: '100%'
         },
 
         logoContainer: {
             position: 'absolute',
             top: '30%',
-            left: '42%',
+            left: '38%',
             height: '40%',
             width: '25%',
         }
@@ -115,7 +112,7 @@ export const Banner = (props) => {
                         <img src={logo} style={{width: '100%', height: '90%'}} />
                     </div>
                     <div className='buttonContainer' style={{marginTop: 50, textAlign: 'center'}}>
-                        <Button buttonText='Boka Bord' iconElement={<FontAwesomeIcon icon={faCalendarCheck} />} />
+                    <Button buttonText="Boka Bord" iconElement={<SetMeal />} />
                     </div>
             </div>
 
