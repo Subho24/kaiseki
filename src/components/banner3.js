@@ -42,7 +42,7 @@ export const Banner3 = (props) => {
                     fontSize: 'large'
                 }} >
                     <h3>
-                        Vi är en restaurang med inspiration från det japanska köket. Sakanayas vision är att ingen gillar allt men alla gillar något. Med den insikten sattes en meny med halvportioner ihop, bestående av allt från sushi till varma rätter. Målet är att erbjuda något till alla oavsett smak och tycke.
+                        Vi är en restaurang med inspiration från det japanska köket. Kaiseki's vision är att ingen gillar allt men alla gillar något. Med den insikten sattes en meny med halvportioner ihop, bestående av allt från sushi till varma rätter. Målet är att erbjuda något till alla oavsett smak och tycke.
                     </h3>
                 </div>
             </div>

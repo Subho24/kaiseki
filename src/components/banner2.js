@@ -20,7 +20,7 @@ export const Banner2 = (props) => {
         },
 
         textContainer: {
-            height: '60%',
+            height: '65%',
             width: '60%',
             marginTop: '10%',
             backgroundColor: 'dimgray',
@@ -38,19 +38,14 @@ export const Banner2 = (props) => {
     return (
         <div className='bannerContainer' style={styles.container}>
             <div style={styles.textContainer}>
-                <div>
-                    <h1>Kaiseki 懐石</h1>
-                </div>
-                <h3>Kaiseki är en traditionell japansk middag.
-                    Den är bestående av många olika rätter från förrätter till
-                    desserter som är väl anpassade till varandra. Ofta kommer det i flera serveringaralternativtatt man får det på en bricka.
-                    Denna typ av servering motsvarar ungefär en komplett middag med förrätt, huvudrätt, sushi och efterrätt.
-                    Här på Sakanaya så väljer kockarna ut olika rätter för varje vecka.
-                    Hör med servisen om vad som står på kvällens meny    
-                    Vår kaiseki kommer ut i 6 serveringar och går även att få vegetarisk & vegan.
+                <h3>
+                    Välkommen till Kaiseki, där mat, cocktails och drycker möts för att skapa en oförglömlig matupplevelse.
+                    Våra dörrar öppnar den 26 april och vi kan inte vänta med att dela våra kulinariska skapelser med dig. Från traditionella japanska rätter till moderna tolkningar, vår meny är utformad för att glädja dina smaklökar och lämna dig sugen på mer.
+                    Häng med oss på en måltid, eller stanna förbi för en drink och låt våra experter mixologer skapa den perfekta cocktailen som passar ditt humör. Med en avslappnad atmosfär och uppmärksam service är Kaiseki den perfekta platsen att varva ner och njuta av god mat och gott sällskap.
+                    Missa inte spänningen - registrera dig nedan för att vara den första att veta om vår öppning och få exklusiva erbjudanden och uppdateringar.
+                    Vi ses snart på Kaiseki!
                 </h3>
             </div>
-            <Button buttonText="Kaiseki Middag" iconElement={<SetMeal />} />
         </div>
     )
 }

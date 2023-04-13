@@ -23,7 +23,7 @@ export const Text = (props) => {
     return (
         <div style={styles.conatainer}>
             <h1>
-                Ta en tur till Japan och få en smak av deras kultur, tradition och konst med vår kaiseki Middagsmeny. Boka ditt bord och låt oss göra din kväll till en minnesvärd välsmakande resa till Japan med vår service och vårt urval av rätter.
+                Ta en tur till Japan och få en smak av deras kultur, tradition och konst i vår restaurang. Boka ditt bord och låt oss göra din kväll till en minnesvärd välsmakande resa till Japan med vår service och vårt urval av rätter och utmärkt drycker.
             </h1>
             <img src={arrow} />
         </div>
