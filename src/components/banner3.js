@@ -10,14 +10,14 @@ export const Banner3 = (props) => {
             height: screen < 500 ? null : 800,
             width: screen < 500 ? null : '90%',
             margin: 'auto',
-            marginTop: screen < 500 ? 100 : 200
+            marginTop: screen < 500 ? null : 200
         },
         
         leftBanner: {
             width: '50%',
             backgroundImage: `url(${banner})`,
-            backgroundRepeat: 'round',
-            backgroundAttachment: 'fixed',
+            backgroundRepeat: 'no-repeat',
+            // backgroundAttachment: 'fixed',
             backgroundPosition: screen < 500 ? 'right' : null,
             // backgroundSize:  screen < 500 ? 'cover' : null
         },
