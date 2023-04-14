@@ -17,7 +17,7 @@ function App() {
       {/* <Nav/> */}
       <Banner/>
       <Text/>
-      <Banner2 />
+      {/* <Banner2 /> */}
       <Banner3 />
       {/* <Banner4 /> */}
       <div style={{

@@ -1,5 +1,5 @@
 import banner from '../banner.webp';
-import logo_background from '../logo_background.webp';
+import logo_background from '../logo_background3.webp';
 import tempBackground from '../temporaryBackground.webp';
 import logo from '../Kaiseki Transparent-1.png';
 import { Button } from './button';
@@ -8,6 +8,7 @@ import { SetMeal } from '@mui/icons-material';
 
 export const Banner = (props) => {
     const screen = window.innerWidth;
+    const height = window.innerHeight
 
     const styles = {
         container: {
@@ -18,8 +19,8 @@ export const Banner = (props) => {
             position: 'relative',
             top: 0,
             left: 0,
-            height: screen < 500 ? 600 : 800,
-            width: '90%',
+            height: screen < 500 ? height : 800,
+            width: screen < 500 ? '100%' : '90%',
             margin: 'auto'
         },
 
@@ -35,12 +36,13 @@ export const Banner = (props) => {
             backgroundImage: `url(${logo_background})`,
             backgroundRepeat: 'no-repeat',
             backgroundPosition: 'center',
-            backgroundSize: 'cover',
+            backgroundSize: screen < 500 ? 'contain' : 'cover',
             position: 'absolute',
-            top: screen < 500 ? 70 : 0,
-            left: screen < 500 ? -20 : 0,
+            top: screen < 500 ? 95 : 0,
+            left: screen < 500 ? -15 : 0,
             width: screen < 500 ? '108%' : '95%',
-            height: screen < 500 ? '70%' : '100%'
+            height: screen < 500 ? '70%' : '100%',
+            transform: screen < 500 ? 'scale(-1)' : null
         },
 
         logoContainer: {
@@ -53,7 +55,7 @@ export const Banner = (props) => {
 
         imgContainer: {
             width: screen < 500 ? '60%' : null,
-            marginLeft: screen < 500 ? '25%' : null
+            marginLeft: screen < 500 ? '21%' : null
         }
     }
 

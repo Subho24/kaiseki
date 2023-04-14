@@ -5,9 +5,9 @@ export const Text = (props) => {
 
     const styles = {
         conatainer: {
-            width: screen < 1200 ? '100%' : '80%',
+            width: screen < 1200 && screen > 500 ? '100%' : screen < 500 ? '120%' : '80%',
             color: 'white',
-            margin: screen < 1200 && screen > 500 ? '10% auto 145px 10%' : screen < 500 ? '10% auto 50px 60px' : '10% auto 145px auto',
+            margin: screen < 1200 && screen > 500 ? '10% auto 145px 10%' : screen < 500 ? '10% auto 50px 50px' : '10% auto 145px auto',
             transform: 'rotate(-20deg)',
             fontFamily: 'cursive',
             display: 'flex',
@@ -17,7 +17,8 @@ export const Text = (props) => {
         },
 
         arrow: {
-            width: screen < 500 ? '200px' : null
+            width: screen < 500 ? '200px' : null,
+            marginRight: screen < 500 ? '100px' : null
         }
     }
 
