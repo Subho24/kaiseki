@@ -68,7 +68,7 @@ export const Banner = (props) => {
                         <img src={logo} style={{width: '165%', height: '90%', margin: '-83px'}} />
                     </div>
                     <div className='buttonContainer' style={{marginTop: 175, textAlign: 'center'}}>
-                    <Button buttonText="Boka Bord" iconElement={<SetMeal />} buttonUrl="https://boisterous-mandazi-d6dd55.netlify.app/book/668d2b6e-e432-4e25-ae2b-d5c97b93b780" />
+                    <Button buttonText="Boka Bord" iconElement={<SetMeal />} buttonUrl="https://reserveit.se/book/668d2b6e-e432-4e25-ae2b-d5c97b93b780" />
                     </div>
             </div>
         </div>
