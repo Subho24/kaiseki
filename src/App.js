@@ -10,6 +10,8 @@ import { Banner3 } from './components/banner3';
 import { Banner4 } from './components/banner4';
 
 function App() {
+  const screen = window.innerWidth;
+
   return (
     <div>
       {/* <Nav/> */}
@@ -21,20 +23,20 @@ function App() {
       <div style={{
           textAlign: 'center',
           color: 'white',
-          marginTop: '20%'
+          marginTop: '20%',
+          fontSize: screen < 500 ? '0.4em' : null
         }}
       >
-        <h1>
+        <h1 style={{margin:0}}>
           Address: Stora nygatan 23
           <br/>
-          <br/>
+          { screen < 500 ? null : <br/>}
           211 37 Malmö
-          <br/>
+          { screen < 500 ? null : <br/>}
           <br/>
           040 121252
         </h1>
       </div>
-      <div style={{height: 500}} />
     </div>
   );
 }

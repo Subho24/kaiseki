@@ -7,6 +7,8 @@ import { SetMeal } from '@mui/icons-material';
 
 
 export const Banner = (props) => {
+    const screen = window.innerWidth;
+
     const styles = {
         container: {
             backgroundImage: `url(${tempBackground})`,
@@ -16,7 +18,7 @@ export const Banner = (props) => {
             position: 'relative',
             top: 0,
             left: 0,
-            height: 800,
+            height: screen < 500 ? 600 : 800,
             width: '90%',
             margin: 'auto'
         },
@@ -35,18 +37,23 @@ export const Banner = (props) => {
             backgroundPosition: 'center',
             backgroundSize: 'cover',
             position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '95%',
-            height: '100%'
+            top: screen < 500 ? 70 : 0,
+            left: screen < 500 ? -20 : 0,
+            width: screen < 500 ? '108%' : '95%',
+            height: screen < 500 ? '70%' : '100%'
         },
 
         logoContainer: {
             position: 'absolute',
             top: '42%',
-            left: '38%',
-            height: '40%',
-            width: '25%',
+            left: screen < 500 ? null : '38%',
+            height: screen < 500 ? null : '40%',
+            width: screen < 500 ? null : '25%',
+        },
+
+        imgContainer: {
+            width: screen < 500 ? '60%' : null,
+            marginLeft: screen < 500 ? '25%' : null
         }
     }
 
@@ -55,19 +62,13 @@ export const Banner = (props) => {
         <div className='bannerContainer' style={styles.container}>
             <div className='logoBackground' style={styles.logoBackground} />
             <div className='logoContainer' style={styles.logoContainer}>
-                    <div>
+                    <div className='imgContainer' style={styles.imgContainer} >
                         <img src={logo} style={{width: '165%', height: '90%', margin: '-83px'}} />
                     </div>
                     <div className='buttonContainer' style={{marginTop: 175, textAlign: 'center'}}>
-                    <Button buttonText="Boka Bord" iconElement={<SetMeal />} />
+                    <Button buttonText="Boka Bord" iconElement={<SetMeal />} buttonUrl="https://boisterous-mandazi-d6dd55.netlify.app/book/668d2b6e-e432-4e25-ae2b-d5c97b93b780" />
                     </div>
             </div>
-
-
-
-
-            {/* <img src={logo_background} style={styles.img2} /> */}
-            {/* <img src={logo} style={styles.logo}  />  */}
         </div>
     )
 }

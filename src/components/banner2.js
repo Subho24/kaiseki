@@ -4,6 +4,8 @@ import { SetMeal } from '@mui/icons-material';
 
 
 export const Banner2 = (props) => {
+    const screen = window.innerWidth;
+
     const styles = {
         container: {
             backgroundImage: `url(${banner})`,
@@ -14,14 +16,14 @@ export const Banner2 = (props) => {
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-            height: 800,
+            height: screen < 500 ? 700 : 800,
             width: '90%',
             margin: 'auto'
         },
 
         textContainer: {
-            height: '65%',
-            width: '60%',
+            height: screen < 500 ? null : '65%',
+            width: screen < 1200 ? '80%' : '60%',
             marginTop: '10%',
             backgroundColor: 'dimgray',
             border: '2px solid black',
@@ -29,7 +31,7 @@ export const Banner2 = (props) => {
             opacity: '0.8',
             color: 'white',
             fontFamily: 'sans-serif',
-            fontSize: 'large',
+            fontSize: screen < 500 ? '0.7em' : 'large',
             lineHeight: 2,
         },
     }

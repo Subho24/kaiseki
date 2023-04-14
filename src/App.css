@@ -1,7 +1,22 @@
+html, body{
+  overflow-x: hidden;
+}
+
+
 #root {
   background-image: url('./background.png');
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
+  font-family: fantasy;
 }
+
+
+/* For screens < 1200px */
+/* @media screen and (max-width: 1200px) {
+  .textContainer {
+    width: 100%;
+    margin-left: 10%;
+  }
+} */

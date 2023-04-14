@@ -1,7 +1,9 @@
 import { useState } from "react"
 
+
 export const Button = (props) => {
     const [isHover, setIsHover] = useState(false);
+    const screen = window.innerWidth;
 
 
     const handleMouseEnter = () => {
@@ -14,19 +16,20 @@ export const Button = (props) => {
 
     const styles = {
         button: {
-            width: '230px',
+            width: screen < 500 ? '200px' : '230px',
             height: '50px',
             backgroundColor: isHover ? 'white' : 'black',
             border: '1px solid white',
             color: isHover ? 'black' : 'white',
-            fontSize: 'larger',
+            fontSize: screen < 500 ? 'large' : 'larger',
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
             gap: '10px',
             margin: 'auto',
             cursor: 'pointer',
-            opacity: 'unset'
+            opacity: 'unset',
+            fontFamily: 'auto'
         }
     }
     return (
@@ -34,6 +37,9 @@ export const Button = (props) => {
             style={styles.button} 
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
+            onClick={() => {
+                window.location.replace(props.buttonUrl)
+            }}
         >
             <span>
                 {props.buttonText}
