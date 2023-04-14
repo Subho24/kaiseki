@@ -7,7 +7,7 @@ export const Banner3 = (props) => {
     const styles = {
         container: {
             display: 'flex',
-            height: screen < 500 ? null : 800,
+            height: screen < 500 ? null : null,
             width: screen < 500 ? null : '90%',
             margin: 'auto',
             marginTop: screen < 500 ? null : 200
@@ -16,8 +16,8 @@ export const Banner3 = (props) => {
         leftBanner: {
             width: '50%',
             backgroundImage: `url(${banner})`,
-            backgroundRepeat: 'no-repeat',
-            // backgroundAttachment: 'fixed',
+            backgroundRepeat:  screen < 500 ? 'no-repeat' : null,
+            backgroundAttachment:  screen < 500 ? null : 'fixed',
             backgroundPosition: screen < 500 ? 'right' : null,
             // backgroundSize:  screen < 500 ? 'cover' : null
         },

@@ -40,7 +40,7 @@ export const Banner = (props) => {
             position: 'absolute',
             top: screen < 500 ? 95 : 0,
             left: screen < 500 ? -15 : 0,
-            width: screen < 500 ? '108%' : '95%',
+            width: screen < 500 ? '108%' : '100%',
             height: screen < 500 ? '70%' : '100%',
             transform: screen < 500 ? 'scale(-1)' : null
         },
