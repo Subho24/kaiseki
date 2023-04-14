@@ -33,20 +33,19 @@ export const Button = (props) => {
         }
     }
     return (
-        <div 
-            style={styles.button} 
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-            onClick={() => {
-                window.location.replace(props.buttonUrl)
-            }}
-        >
-            <span>
-                {props.buttonText}
-            </span>
-            <span style={{marginBottom: -5}}>
-                {props.iconElement}
-            </span>
-        </div>
+        <a href={props.buttonUrl}> 
+            <div 
+                style={styles.button} 
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+            >
+                <span>
+                    {props.buttonText}
+                </span>
+                <span style={{marginBottom: -5}}>
+                    {props.iconElement}
+                </span>
+            </div>
+        </a>
     )
 }

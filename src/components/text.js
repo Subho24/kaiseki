@@ -33,7 +33,7 @@ export const Text = (props) => {
             backgroundPosition:  screen < 500 ? 'bottom' : null,
         }}>
             <div style={styles.conatainer} className='textContainer' >
-                <h1 style={{marginTop: screen < 500 ? '40px' : null }}>
+                <h1 style={{marginTop: screen < 500 ? '30px' : null }}>
                     Ta en tur till Japan och få en smak av deras kultur, tradition och konst i vår restaurang. Boka ditt bord och låt oss göra din kväll till en minnesvärd välsmakande resa till Japan med vår service och vårt urval av rätter och utmärkt drycker.
                 </h1>
                 <img src={arrow} style={styles.arrow} />
