@@ -33,7 +33,7 @@ export const Button = (props) => {
         }
     }
     return (
-        <a href={props.buttonUrl}> 
+        <a href={props.buttonUrl} target='_blank' style={{textDecoration: 'none'} }> 
             <div 
                 style={styles.button} 
                 onMouseEnter={handleMouseEnter}

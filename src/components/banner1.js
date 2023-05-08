@@ -4,6 +4,8 @@ import tempBackground from '../temporaryBackground.webp';
 import logo from '../Kaiseki Transparent-1.png';
 import { Button } from './button';
 import { SetMeal } from '@mui/icons-material';
+import MenuBookIcon from '@mui/icons-material/MenuBook';
+import LocalBarIcon from '@mui/icons-material/LocalBar';
 
 
 export const Banner = (props) => {
@@ -38,7 +40,6 @@ export const Banner = (props) => {
             backgroundPosition: 'center',
             backgroundSize: screen < 500 ? 'contain' : 'cover',
             position: 'absolute',
-            top: screen < 500 ? 95 : 0,
             left: screen < 500 ? -15 : 0,
             width: screen < 500 ? '108%' : '100%',
             height: screen < 500 ? '70%' : '100%',
@@ -47,7 +48,7 @@ export const Banner = (props) => {
 
         logoContainer: {
             position: 'absolute',
-            top: '42%',
+            top: '30%',
             left: screen < 500 ? null : '38%',
             height: screen < 500 ? null : '40%',
             width: screen < 500 ? null : '25%',
@@ -69,6 +70,10 @@ export const Banner = (props) => {
                     </div>
                     <div className='buttonContainer' style={{marginTop: 175, textAlign: 'center'}}>
                     <Button buttonText="Boka Bord" iconElement={<SetMeal />} buttonUrl="https://reserveit.se/book/668d2b6e-e432-4e25-ae2b-d5c97b93b780" />
+                    <br/>
+                    <Button buttonText="Mat" iconElement={<MenuBookIcon />} buttonUrl="https://drive.google.com/file/d/1neGWYf8yfD19_chB1orJwuyGjDEqXvg7/view?usp=share_link" />
+                    <br/>
+                    <Button buttonText="Drinkar" iconElement={<LocalBarIcon />} buttonUrl="https://drive.google.com/file/d/1neGWYf8yfD19_chB1orJwuyGjDEqXvg7/view?usp=share_link" />
                     </div>
             </div>
         </div>
