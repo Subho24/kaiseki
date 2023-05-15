@@ -16,9 +16,9 @@ export const Banner3 = (props) => {
         leftBanner: {
             width: '50%',
             backgroundImage: `url(${banner})`,
-            backgroundRepeat:  screen < 500 ? 'no-repeat' : null,
+            backgroundRepeat:  screen < 500 ? 'no-repeat' : 'no-repeat',
             backgroundAttachment:  screen < 500 ? null : 'fixed',
-            backgroundPosition: screen < 500 ? 'right' : null,
+            backgroundPosition: screen < 500 ? 'right' : '-225px',
             // backgroundSize:  screen < 500 ? 'cover' : null
         },
 

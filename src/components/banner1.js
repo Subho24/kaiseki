@@ -66,14 +66,14 @@ export const Banner = (props) => {
             <div className='logoBackground' style={styles.logoBackground} />
             <div className='logoContainer' style={styles.logoContainer}>
                     <div className='imgContainer' style={styles.imgContainer} >
-                        <img src={logo} style={{width: '165%', height: '90%', margin: '-83px'}} />
+                        <img src={logo} style={{width: screen <= 500 ? '170%' : screen > 1200 ? '155%' : '235%', height: '90%', margin: '-83px'}} />
                     </div>
                     <div className='buttonContainer' style={{marginTop: 175, textAlign: 'center'}}>
                     <Button buttonText="Boka Bord" iconElement={<SetMeal />} buttonUrl="https://reserveit.se/book/668d2b6e-e432-4e25-ae2b-d5c97b93b780" />
                     <br/>
-                    <Button buttonText="Mat" iconElement={<MenuBookIcon />} buttonUrl="https://drive.google.com/file/d/1neGWYf8yfD19_chB1orJwuyGjDEqXvg7/view?usp=share_link" />
+                    <Button buttonText="Mat" iconElement={<MenuBookIcon />} buttonUrl="https://drive.google.com/file/d/1WluYt1y2PEKuKakm_-luhm0GfDcK9_7d/view?usp=sharing" />
                     <br/>
-                    <Button buttonText="Drinkar" iconElement={<LocalBarIcon />} buttonUrl="https://drive.google.com/file/d/1neGWYf8yfD19_chB1orJwuyGjDEqXvg7/view?usp=share_link" />
+                    <Button buttonText="Drinkar" iconElement={<LocalBarIcon />} buttonUrl="https://drive.google.com/file/d/1KlfcGQqWHvH-qb3QFlbFny-5qfnIOOoi/view?usp=sharing" />
                     </div>
             </div>
         </div>

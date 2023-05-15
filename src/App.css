@@ -27,11 +27,12 @@ html, body{
 
 @media screen and (min-width: 500px) {
   #root {
-    background-image: url('./background.png');
+    background-color: black;
+    /* background-image: url('./background.png');
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-    font-family: fantasy;
+    font-family: fantasy; */
   }
 }
