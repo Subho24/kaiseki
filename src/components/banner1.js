@@ -69,11 +69,11 @@ export const Banner = (props) => {
                         <img src={logo} style={{width: screen <= 500 ? '170%' : screen > 1200 ? '155%' : '235%', height: '90%', margin: '-83px'}} />
                     </div>
                     <div className='buttonContainer' style={{marginTop: 175, textAlign: 'center'}}>
-                    <Button buttonText="Boka Bord" iconElement={<SetMeal />} buttonUrl="https://reserveit.se/book/668d2b6e-e432-4e25-ae2b-d5c97b93b780" />
+                    <Button buttonText="Boka Bord" iconElement={<SetMeal />} buttonUrl="https://book.easytablebooking.com/book/?id=32e11&lang=auto" />
                     <br/>
                     <Button buttonText="Mat" iconElement={<MenuBookIcon />} buttonUrl="https://drive.google.com/file/d/1WluYt1y2PEKuKakm_-luhm0GfDcK9_7d/view?usp=sharing" />
                     <br/>
-                    <Button buttonText="Drinkar" iconElement={<LocalBarIcon />} buttonUrl="https://drive.google.com/file/d/1KlfcGQqWHvH-qb3QFlbFny-5qfnIOOoi/view?usp=sharing" />
+                    <Button buttonText="Drinkar" iconElement={<LocalBarIcon />} buttonUrl="https://drive.google.com/file/d/19SnCqrg9g4C0jBrovTIKr3oQO-VBIEuc/view?usp=sharing" />
                     </div>
             </div>
         </div>
