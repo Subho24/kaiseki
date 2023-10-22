@@ -8,6 +8,7 @@ import { Text } from './components/text';
 import { Banner2 } from './components/banner2';
 import { Banner3 } from './components/banner3';
 import { Banner4 } from './components/banner4';
+import { Event } from './components/event';
 
 function App() {
   const screen = window.innerWidth;
@@ -16,6 +17,7 @@ function App() {
     <div>
       {/* <Nav/> */}
       <Banner/>
+      <Event/>
       <Text/>
       {/* <Banner2 /> */}
       <Banner3 />
