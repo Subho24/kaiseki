@@ -1,9 +1,11 @@
-import eventImage from '../kaiseki_event.png';
+import eventImage from '../kaiseki_event.jpeg';
 
 export const Event = () => {
     return(
         <div>
-            <img src={eventImage} width={'100%'} alt='cocktailkväll' />
+            <a href='https://book.easytablebooking.com/book/?id=32e11&lang=auto'>
+                <img src={eventImage} href width={'100%'} alt='cocktailkväll' />
+            </a>
         </div>
     )
 }
